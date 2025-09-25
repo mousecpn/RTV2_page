@@ -448,11 +448,9 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We address the problem of (a) modeling the user's future behavior based on the past trajectory and contextual information, and (b) predicting the next desired action based on the current user's command through an uncertain user interface. 
-              We propose a probabilistic shared control framework for navigation, dubbed the Robot Trajectron V2 (RT-V2), which learns a decision-making distribution by imitation learning and imagined rollout reinforcement learning.
-              RT-V2 realizes shared control by posteriorly estimating the desired action based on the current user's command. 
-              A sampling-based optimization method with constraints is employed to ensure the safety of RT-V2's posterior estimated actions, preventing collisions. 
-              Comprehensive experiments on trajectory prediction, navigation, and shared autonomy demonstrate that RT-V2 can accurately predict the user's intent and provide effortless assistance for users.
+              We propose a probabilistic shared-control solution for navigation, called Robot Trajectron V2 (RT-V2), that enables accurate intent prediction and safe, effective assistance in human-robot interaction. RT-V2 jointly models a user's long-term behavioral patterns and their noisy, low-dimensional control signals by combining a prior intent model with a posterior update that accounts for real-time user input and environmental context. 
+              The prior captures the multimodal and history-dependent nature of user intent using recurrent neural networks and conditional variational autoencoders, while the posterior integrates this with uncertain user commands to infer desired actions. We conduct extensive experiments to validate RT-V2 across synthetic benchmarks, human-computer interaction studies with keyboard input, and brain-machine interface experiments with non-human primates. 
+              Results show that RT-V2 outperforms the state of the art in intent estimation, provides safe and efficient navigation support, and adequately balances user autonomy with assistive intervention. By unifying probabilistic modeling, reinforcement learning, and safe optimization, RT-V2 offers a principled and generalizable approach to shared control for diverse assistive technologies.
             </p>
           </div>
         </div>
@@ -466,7 +464,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-3">Model Pipeline</h2>
-          <img src="./static/videos/pipeline.png" alt="Model Pipeline Diagram" class="fig" width="100%"/>
+          <img src="./static/videos/RT-V2.png" alt="Model Pipeline Diagram" class="fig" width="80%"/>
         </div>
       </div>
     </div>
@@ -599,7 +597,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <h2 class="title is-3">Simulation Shared Autonomy Experiment</h2>
+          <h2 class="title is-3">Simulation Shared Autonomy Experiment with Human Users</h2>
         </div>
       </div>
       
@@ -711,4 +709,3 @@
   </footer>
 </body>
 </html>
-Smart, efficient model for everyday use L
