@@ -385,7 +385,7 @@
             </div>
             
             <div class="is-size-5" style="margin-top: 1rem; margin-bottom: 1rem; color: #F46E4A;">
-              **2025 IROS SASA workshop Best Poster Award 3rd place.**
+              <b>2025 IROS SASA workshop Best Poster Award 3rd place</b>
             </div>
             
             <div class="is-size-5 publication-authors">
@@ -670,7 +670,7 @@
         </div>
       </div>
       
-      <div class="columns is-centered has-text-centered">
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column">
           <video autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/bmi/fixed_obs.mp4" type="video/mp4">
@@ -680,9 +680,29 @@
             Fixed obstacle avoidance. Red in the top-right corner means pure BMI control, while green means RT-V2.
           </div>
         </div>
-      </div>
-      
+      </div> -->
       <div class="columns is-centered has-text-centered">
+        <div class="column">
+            <video autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/bmi/fixed_obs_direct.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title">
+                Fixed obstacle avoidance with pure BMI control.
+            </div>
+        </div>
+        <div class="column">
+            <video autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/bmi/fixed_obs_RT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title">
+                Fixed obstacle avoidance with RT-V2.
+            </div>
+        </div>
+    </div>
+        
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column">
           <video autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/bmi/appearing_obs.mp4" type="video/mp4">
@@ -693,8 +713,29 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div> -->
+  
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/bmi/appearing_obs_direct.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="video-title">
+              Appearing obstacle avoidance with pure BMI control. Note that we sometimes give trials without an obstacle to counteract bias.
+          </div>
+      </div>
+      <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/bmi/appearing_obs_RT.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="video-title">
+              Appearing obstacle avoidance with RT-V2. Note that we sometimes give trials without an obstacle to counteract bias.
+          </div>
+      </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="footer">
